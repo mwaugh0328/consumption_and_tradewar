@@ -4,7 +4,7 @@ This repository contains code to reproduce aspects of the paper "The Consumption
 
 There are several files associated with this repository. Almost all of the notebooks directly pull data from there original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm)). After running the files, most of the output is saved as a  ``.parquet`` files are stored in the data folder.
 
-Below is a description of each individual file. The are organized in the sequence for which they must be run if you do not have the intermediate files.
+Below is a description of each jupyter notebooks. If you don't know what this means or what do with these notebooks, this website is a great place to start [https://datascience.quantecon.org/](https://datascience.quantecon.org/). They are organized in the sequence for which they must be run if you do not have the intermediate files.
 
 - [``updated_tariff_data.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/updated_tariff_data.ipynb) which uses and shapes the tariff data from [Bown, Jung, and Zhang](https://www.piie.com/blogs/trade-and-investment-policy-watch/trump-has-gotten-china-lower-its-tariffs-just-toward).
 
