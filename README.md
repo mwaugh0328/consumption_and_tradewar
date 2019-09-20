@@ -2,7 +2,7 @@
 
 This repository contains code to reproduce aspects of the paper "The Consumption Response to Trade Shocks: Evidence from the US-China Trade War." Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level, trade, and employment results.
 
-There are several files associated with this repository. Almost all of the notebooks directly pull data from there original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm)). After running the files, most of the output is saved as a  ``.parquet`` files are stored in the data folder.
+There are several files associated with this repository. Almost all of the notebooks directly pull data from there original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm), [shapefiles from the US Census](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2017.html)). After running the files, most of the output is saved as a  ``.parquet`` files are stored in the data folder.
 
 Below is a description of each jupyter notebook in the repository. If you don't know what a "jupyter notebook" or what do with these notebooks, this website is a great place to start [https://datascience.quantecon.org/](https://datascience.quantecon.org/).
 
