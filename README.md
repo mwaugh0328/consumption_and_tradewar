@@ -18,4 +18,6 @@ The files below are organized in the sequence for which they must be run if you 
 
 - [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) grabs the [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/) files from the BLS and then creates employment measures at the county-level, monthly frequency. It is then merged with the trade data from above. **Note** there is a place where, depending on if commented, creates a dataset with goods producing employment or total private employment.
 
-- [``employment_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/employment_analysis.ipynb) performs the employment analysis in Section 5 and has the unweighted regression results as well. The analysis also mimics most aspects of the auto analysis in the paper (e.g., visualizations, tabular analysis, regression results). 
+- [``employment_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/employment_analysis.ipynb) performs the employment analysis in Section 5 and has the unweighted regression results as well. The analysis also mimics most aspects of the auto analysis in the paper (e.g., visualizations, tabular analysis, regression results).
+
+- [``trade_analysis.ipynb``] performs the trade analysis in Section 5.
