@@ -2,7 +2,7 @@
 
 ![](simple_county_by_quantile.png)
 
-This repository contains code to reproduce aspects of the paper ["The Consumption Response to Trade Shocks: Evidence from the US-China Trade War."](http://www.waugheconomics.com/uploads/2/2/5/6/22563786/waugh_consumption.pdf) Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level and then their correlation with trade and employment.
+This repository contains code to reproduce aspects of the paper ["The Consumption Response to Trade Shocks: Evidence from the US-China Trade War."](http://www.waugheconomics.com/uploads/2/2/5/6/22563786/waugh_consumption.pdf) Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level and then their correlation with trade and employment. The auto analysis notbook is **not** included here as the data used is proprietary. 
 
 There are several files associated with this repository. Almost all of the notebooks directly pull data from the original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm), [shapefiles from the US Census](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2017.html)). After running the files, most of the output is saved as a  ``.parquet`` files and stored in the data folder.
 
@@ -20,4 +20,4 @@ The files below are organized in the sequence for which they must be run if you 
 
 - [``employment_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/employment_analysis.ipynb) performs the employment analysis in Section 5 and has the unweighted regression results as well. The analysis also mimics most aspects of the auto analysis in the paper (e.g., visualizations, tabular analysis, regression results).
 
-- [``trade_analysis.ipynb``] performs the trade analysis in Section 5.
+- [``trade_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/trade_analysis.ipynb) performs the trade analysis in Section 5 (us exports to china, exports in total) and it contains the unweighted regression results as well.
