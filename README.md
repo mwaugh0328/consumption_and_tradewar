@@ -2,7 +2,7 @@
 
 ![](simple_county_by_quantile.png)
 
-This repository contains code to reproduce aspects of the paper ["The Consumption Response to Trade Shocks: Evidence from the US-China Trade War."](http://www.waugheconomics.com/uploads/2/2/5/6/22563786/waugh_consumption.pdf) Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level and then their correlation with trade and employment. The auto analysis notbook is **not** included here as the data used is proprietary.
+This repository contains code to reproduce aspects of the paper ["The Consumption Response to Trade Shocks: Evidence from the US-China Trade War."](http://www.waugheconomics.com/uploads/2/2/5/6/22563786/waugh_consumption.pdf) Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level and then their correlation with trade and employment. The auto analysis notebook is **not** included here as the data used is proprietary.
 
 There are several files associated with this repository. Almost all of the notebooks directly pull data from the original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), concordance from the US Census, employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm), [shapefiles from the US Census](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2017.html)). After running the files, most of the output is saved as a  ``.parquet`` files and stored in the data folder.
 
@@ -24,4 +24,6 @@ The files below are organized in the sequence for which they must be run if you 
 
 - [``trade_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/trade_analysis.ipynb) performs the trade analysis in Section 5 (us exports to china, exports in total) and it contains the unweighted regression results as well.
 
-Finally I do want to highlight that there is a [license](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/LICENSE) regarding this work, it's use, and so forth. 
+As of the last push, these notebooks will come very close, but not exactly replicate the values in the [NBER working paper](https://www.nber.org/papers/w26353) version my changing the concordance methodology. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts. 
+
+Finally I do want to highlight that there is a [license](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/LICENSE) regarding this work, it's use, and so forth.
