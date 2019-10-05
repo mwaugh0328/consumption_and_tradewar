@@ -26,4 +26,4 @@ The files below are organized in the sequence for which they must be run if you 
 
 As of the last push, these notebooks will come very close, but not exactly replicate the values in the [NBER working paper](https://www.nber.org/papers/w26353) version due to my changing of code regarding how the concordance is treated. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts.
 
-Finally I do want to highlight that there is a [license](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/LICENSE) regarding this work, it's use, and so forth.
+Finally, I must highlight that there is a [license](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/LICENSE) regarding this work, it's use, and so forth.
