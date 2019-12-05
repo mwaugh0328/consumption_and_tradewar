@@ -12,7 +12,7 @@ This repository contains code to reproduce aspects of the paper ["The Consumptio
 
 - I now use the BLS single files rather than the county high-level files. I will keep the [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) file in the repository, but now to generate the files you must use [``bls_single_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_single_file.ipynb). The BLS data now goes to June 2019. In this notebook, I also layer in population, income, rural share data from the Census.
 
-- Pretrends. The notebook [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) now provides an exploration of pretrend issues in employment data.
+- Pretrends. The notebook [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) now provides an exploration of pretrend issues in employment data. This notebook essentially mimics what is done for autos. 
 
 - In the paper and the notebooks, population is now used as the main weighting variable rather than employment. To revert to the previous results, simply change the weighting variable to ``total_employment''.
 
