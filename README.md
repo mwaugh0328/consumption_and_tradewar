@@ -8,11 +8,11 @@ This repository contains code to reproduce aspects of the paper ["The Consumptio
 
 **Update (12/2019)** The paper and aspects of the code have been revised relative to the September 2019 [NBER working paper](https://www.nber.org/papers/w26353) version. Below are some key updates:
 
-- Alternative concordance is used. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts.
+- An alternative concordance is used. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts.
 
-- I now use the BLS single files rather than the county high-level files. I will keep the [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) file in the repository, but now to generate the files you must use [``bls_single_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_single_file.ipynb). In this notebook, I also layer in population, income, rural share data from the Census.
+- I now use the BLS single files rather than the county high-level files. I will keep the [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) file in the repository, but now to generate the files you must use [``bls_single_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_single_file.ipynb). The BLS data now goes to June 2019. In this notebook, I also layer in population, income, rural share data from the Census.
 
-- Pretrends. The notebook now provides a treatment of this.
+- Pretrends. The notebook [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) now provides an exploration of pretrend issues in employment data.
 
 - In the paper and the notebooks, population is now used as the main weighting variable rather than employment. To revert to the previous results, simply change the weighting variable to ``total_employment''.
 
@@ -36,7 +36,7 @@ The files below are organized in the sequence for which they must be run if you 
 
 - [``employment_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/employment_analysis.ipynb) performs the employment analysis in Section 5 and has the unweighted regression results as well. The analysis also mimics most aspects of the auto analysis in the paper (e.g., visualizations, tabular analysis, regression results).
 
-- [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) performs the pretrend analysis and generates figures 5 in paper. Here you must specify the employment measure ``emp_all`` is total employment, ``emp_gds`` is goods employment, ``emp_rtl`` is retail employment. 
+- [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) performs the pretrend analysis, Section 6, and generates figures 5 in paper. Here you must specify the employment measure ``emp_all`` is total employment, ``emp_gds`` is goods employment, ``emp_rtl`` is retail employment.
 
 - [``trade_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/trade_analysis.ipynb) performs the trade analysis in Section 5 (us exports to china, exports in total) and it contains the unweighted regression results as well. This notebook [``trade_elasticity.ipynb``](https://github.com/mwaugh0328/measuring-trade-elasticities/blob/master/data-code/trade_elasticity.ipynb) estimates a trade elasticity from the product-level trade data...it's 4!
 
