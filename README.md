@@ -4,6 +4,18 @@
 
 This repository contains code to reproduce aspects of the paper ["The Consumption Response to Trade Shocks: Evidence from the US-China Trade War."](http://www.waugheconomics.com/uploads/2/2/5/6/22563786/waugh_consumption.pdf) Only results associated with non-proprietary data are available, i.e. Chinese retaliatory tariffs and it's projection to the county level and then their correlation with trade and employment. The auto analysis notebook is **not** included here as the data used is proprietary.
 
+---
+
+**Update (12/2019)** The paper and aspects of the code have been revised relative to the September 2019 [NBER working paper](https://www.nber.org/papers/w26353) version. Below are some key updates:
+
+- Alternative concordance is used. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts.
+
+- I now use the BLS single files rather than the county high-level files. I will keep the [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) file in the repository, but now to generate the files you must use . In this notebook, I also layer in population, income, rural share data from the Census. Population is now used as the main weighting variable rather than employment.  
+
+- Pretrends. The notebook now provides a treatment of this.
+
+---
+
 There are several files associated with this repository. Almost all of the notebooks directly pull data from the original source (trade data using the [Census International Trade API](https://www.census.gov/data/developers/data-sets/international-trade.html), concordance from the US Census, employment data from the [BLS](https://www.bls.gov/cew/downloadable-data-files.htm), [shapefiles from the US Census](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2017.html)). After running the files, most of the output is saved as a  ``.parquet`` files and stored in the data folder.
 
 Below is a description of each jupyter notebook in the repository. If you don't know what a "jupyter notebook" is or what to do with them, this website is a great place to start: [https://datascience.quantecon.org/](https://datascience.quantecon.org/).
@@ -23,8 +35,6 @@ The files below are organized in the sequence for which they must be run if you 
 - [``employment_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/employment_analysis.ipynb) performs the employment analysis in Section 5 and has the unweighted regression results as well. The analysis also mimics most aspects of the auto analysis in the paper (e.g., visualizations, tabular analysis, regression results).
 
 - [``trade_analysis.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/trade_analysis.ipynb) performs the trade analysis in Section 5 (us exports to china, exports in total) and it contains the unweighted regression results as well.
-
-As of the last push, these notebooks will come very close, but not exactly replicate the values in the [NBER working paper](https://www.nber.org/papers/w26353) version due to my changing of code regarding how the concordance is treated. To reproduce the NBER version results, read the notes around code cell 15 in [``countylevel_tariffs_and_exports.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/countylevel_tariffs_and_exports.ipynb) and uncomment the appropriate parts.
 
 Finally, I must highlight that there is a [license](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/LICENSE) regarding this work, it's use, and so forth.
 
