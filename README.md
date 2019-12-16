@@ -12,9 +12,11 @@ This repository contains code to reproduce aspects of the paper ["The Consumptio
 
 - I now use the BLS single files rather than the county high-level files. I will keep the [``bls_quarterly_county.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_quarterly_county.ipynb) file in the repository, but now to generate the files you must use [``bls_single_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/bls_single_file.ipynb). The BLS data now goes to June 2019. In this notebook, I also layer in population, income, rural share data from the Census.
 
-- Pretrends. The notebook [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) now provides an exploration of pretrend issues in employment data. This notebook essentially mimics what is done for autos. 
+- Pretrends. The notebook [``pretrend_notebook.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/pretrend_notebook.ipynb) now provides an exploration of pretrend issues in employment data. This notebook essentially mimics what is done for autos.
 
-- In the paper and the notebooks, population is now used as the main weighting variable rather than employment. To revert to the previous results, simply change the weighting variable to ``total_employment''.
+- In the paper and the notebooks, population is now used as the main weighting variable rather than employment. To revert to the previous results, simply change the weighting variable to ``total_employment``.
+
+- A driver file that runs everything and reports results discussed in the paper is under construction and posted as [``main_driver_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/main_driver_file.ipynb). If you have the trade and employment dataset constructed, this will generate the results. Also you can use this file to inspect the output, etc.
 
 ---
 
@@ -23,6 +25,8 @@ There are several files associated with this repository. Almost all of the noteb
 Below is a description of each jupyter notebook in the repository. If you don't know what a "jupyter notebook" is or what to do with them, this website is a great place to start: [https://datascience.quantecon.org/](https://datascience.quantecon.org/).
 
 The files below are organized in the sequence for which they must be run if you do not have the intermediate files.
+
+- [``main_driver_file.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/main_driver_file.ipynb) Currently under construction and only performs analysis. Will eventually be setup so it does everything, start to finish.
 
 - [``updated_tariff_data.ipynb``](https://github.com/mwaugh0328/consumption_and_tradewar/blob/master/updated_tariff_data.ipynb) which uses and shapes the tariff data from [Bown, Jung, and Zhang](https://www.piie.com/blogs/trade-and-investment-policy-watch/trump-has-gotten-china-lower-its-tariffs-just-toward). I'm hosting their datafile as I had problems with a direct link.
 
